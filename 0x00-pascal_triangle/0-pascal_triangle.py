@@ -11,8 +11,6 @@ def pascal_triangle(n):
         return []
     if n == 1:
         return [[1]]
-    if n == 2:
-        return [[1], [1, 1]]
     triangle = [[1], [1, 1]]
     for i in range(2, n):
         row = [1]
