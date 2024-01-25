@@ -26,9 +26,6 @@ if __name__ == "__main__":
             status_codes[parsed_line[-2]] += 1
             if counter % 10 == 0:
                 print_stats(file_size, status_codes)
-                file_size = 0
-                status_codes = {"200": 0, "301": 0, "400": 0, "401": 0,
-                                "403": 0, "404": 0, "405": 0, "500": 0}
     except KeyboardInterrupt:
         print_stats(file_size, status_codes)
         raise
