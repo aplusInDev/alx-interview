@@ -1,2 +1,4 @@
 pep8venv/
 *main.py
+__pycache__/
+
