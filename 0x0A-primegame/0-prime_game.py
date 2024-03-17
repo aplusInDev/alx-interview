@@ -5,7 +5,7 @@
 def set_primes(n):
     """ set_primes method set false if the number is not prime
     for each number from 0 to n
-    args: 
+    args:
     n: (int) the number of the elements in the list
     return: list of booleans
     """
@@ -14,7 +14,7 @@ def set_primes(n):
     p = 2
 
     while (p * p <= n):
-        if prime[p] == True:
+        if prime[p] is True:
             for i in range(p * p, n + 1, p):
                 prime[i] = False
         p += 1
